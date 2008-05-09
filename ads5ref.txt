@@ -1,9 +1,9 @@
 AsciiDoc S5 Reference
 =====================
-Wolfgang_Machert and Jan_Christoph_Ebersbach
+:author: Wolfgang Machert and Jan Christoph Ebersbach
 2007-04-02
-:company: Universität Bremen
-:subtitle: A short guide to writing slides with AsciiDoc
+:organization: Universität Bremen
+:subtitle: A short guide to creating slides with AsciiDoc
 :header: {lt}h1{gt}AsciiDoc S5 Reference{lt}/h1{gt}{lt}h2{gt}Mon, 02 Apr 2007 21:19:34 +0200{lt}/h2{gt}
 :footer: {lt}h1{gt}AsciiDoc S5 Reference{lt}/h1{gt}{lt}h2{gt}Mon, 02 Apr 2007 21:19:34 +0200{lt}/h2{gt}
 :defaultview: slideshow
@@ -12,9 +12,13 @@ Wolfgang_Machert and Jan_Christoph_Ebersbach
 
 First Slide
 -----------
-Welcome to our little guide to the asciidoc s5 backend. This reference is supposed to contain the knowledge required to create slides with asciidoc and to contain all s5 elements available through the backend. Have fun reading it.
+Welcome to our little guide to the asciidoc s5 backend. This reference is
+supposed to contain the knowledge required to create slides with asciidoc and to
+contain all s5 elements available through the backend. Have fun reading it.
 
-In creating the backend we tried to match s5 markup to AsciiDoc conventions as best as we could. If you still think there are improvements possible we'd love to hear from you.
+In creating the backend we tried to match s5 markup to AsciiDoc conventions as
+best as we could. If you still think there are improvements possible we'd love
+to hear from you.
 
 Frontpage Attributes
 --------------------
@@ -25,9 +29,11 @@ Frontpage Attributes
 .named attributes
 * *subtitle* - subtitle of the presentation
 * *author* - author of the presentation
-* *company* - company the author represents
+* *organization* - organization the author represents
 
-Keep in mind that attributes will be escaped prior to insertion. So make sure to write +++{lt}+++, +++{gt}+++, and +++{amp}+++ instead of their single character equivalents.
+Keep in mind that attributes will be escaped prior to insertion. So make sure to
+write +++{lt}+++, +++{gt}+++, and +++{amp}+++ instead of their single character
+equivalents.
 
 Behaviour Attributes
 --------------------
@@ -37,7 +43,9 @@ Behaviour Attributes
 * *defaultview* - state the slide starts in, either +slideshow+ or +outline+, default +slideshow+
 * *controlvis* - visibility of the controls, either +visible+ or +hidden+, default +hidden+
 
-Some themes defines special markup for the header and footer (i.e. h1 as lower left and h2 as lower right block inside the footer). Have a look at the style definition or an example for the specific theme.
+Some themes defines special markup for the header and footer (i.e. h1 as lower
+left and h2 as lower right block inside the footer). Have a look at the style
+definition or an example for the specific theme.
 
 emptyslide
 ----------
@@ -45,9 +53,15 @@ It is possible to create Slides without a title by using an +emptyslide+ special
 
 About
 -----
-The s5 AsciiDoc configuration came into being because Jan Christoph Ebersbach decided he was fed up of writing s5 presentations with Markdown and Wolfgang Machert decided he was fed up of writing presentations using OpenOffice/Docbook-slides.
+The s5 AsciiDoc configuration came into being because Jan Christoph Ebersbach
+decided he was fed up of writing s5 presentations with Markdown and Wolfgang
+Machert decided he was fed up of writing presentations using
+OpenOffice/Docbook-slides.
 
-And since they both just started to become AsciiDoc addicts (simply because everyone else and their mom was already writing their diploma-thesis in latex, which made it kinda uncool doing the same) they both agreed that it would be nice writing them in this new toy of theirs.
+And since they both just started to become AsciiDoc addicts (simply because
+everyone else and their mom was already writing their diploma-thesis in latex,
+which made it kinda uncool doing the same) they both agreed that it would be
+nice writing them in this new toy of theirs.
 
 Well, the rest of this story is already at your harddrive...
 
@@ -55,8 +69,10 @@ Changeset
 ---------
 * started ads5 reference
 * replaced css from conf with html tags, cleaned up the markup
-* version metatag reversed to markup version (previous version was based in misunderstanding of the spec)
-* fixed attribute substitution bugs in header (equal sign instead of question mark)
+* version metatag reversed to markup version (previous version was based in
+  misunderstanding of the spec)
+* fixed attribute substitution bugs in header (equal sign instead of question
+  mark)
 * fixed case of defaultview and controlvis attribute
 * fixed header and footer defaults
 * added emptyslide section and theme attribute
