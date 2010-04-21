@@ -42,6 +42,16 @@ Behaviour Attributes
 * *theme* - directory containing the required js and css, default +ui/default+
 * *defaultview* - state the slide starts in, either +slideshow+ or +outline+, default +slideshow+
 * *controlvis* - visibility of the controls, either +visible+ or +hidden+, default +hidden+
+* *transitions* (1.3) - transitions, default +false+
+* *fadeduration* (1.3) - transitions, default +500+
+* *incrduration* (1.3) - transitions, default +250+
+* *automatic* (1.3) - transitions, default +false+
+* *playloop* (1.3) - transitions, default +true+
+* *playdelay* (1.3) - transitions, default +10+
+* *audiosupport* (1.3) - transitions, default +false+
+* *audiovolume* (1.3) - transitions, default +100+
+* *audioerror* (1.3) - transitions, default +false+
+* *audiodebug* (1.3) - transitions, default +false+
 
 Some themes defines special markup for the header and footer (i.e. h1 as lower
 left and h2 as lower right block inside the footer). Have a look at the style
@@ -67,6 +77,8 @@ Well, the rest of this story is already at your harddrive...
 
 Changeset
 ---------
+* added support for s5 1.3 features, 2010-04-21 21:25
+* added suppport for asciidoc 8.5, 2010-04-21 21:25
 * started ads5 reference
 * replaced css from conf with html tags, cleaned up the markup
 * version metatag reversed to markup version (previous version was based in
